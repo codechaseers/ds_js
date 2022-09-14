@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Array Inshert</title>
+</head>
+
+<body>
+    <script>
+        // logic for inshert data 
+
+        // let data = [23, 34, 45, 56];
+        // let new_el = 10;
+        // let position = 2;
+        // console.log(data);
+        // // console.log(data.length);    // data.length start count form 1 not form 0 ;
+
+        // for (let i = data.length - 1; i >= 0; i--) {
+        //     // console.log(data[i])
+        //     if (i >= position) {
+        //         data[i + 1] = data[i]
+        //         if (i == position) {
+        //             data[i] = new_el
+        //         }
+        //     }
+        // }
+        // console.log(data);
+
+
+        // js also have a function for inshert data in to a array
+        // let items=[45,26,27,43,63,48,54];
+        // console.log(items);
+        // items.splice(1,0,3000)
+        // console.log(items);
+
+
+        //let make it dynamically
+
+        let number=[45,26,27,43,63,48,54];
+        console.log(number);
+function inshert(){
+    let index=document.getElementById("index").value
+let index_value=document.getElementById("index_value").value
+index_value=parseInt(index_value)
+let submit=document.getElementById("submit").value
+
+for (let i = number.length - 1; i >= 0; i--) {
+            // console.log(number[i])
+            if (i >= index) {
+                number[i + 1] = number[i]
+                if (i == index) {
+                    number[i] = index_value
+                }
+            }
+        }
+        
+        
+        console.log(number);
+    }
+
+
+
+    </script>
+<input type="text" placeholder="Enter the index " id="index">
+<input type="text" placeholder="Enter the index value" id="index_value">
+<br>
+<br>
+<input type="button" onclick ="inshert()" id="submit" value="Submit">
+
+</body>
+
+</html>

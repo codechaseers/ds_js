@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Merge array </title>
+</head>
+
+<body>
+    <h2>Merge array </h2>
+    <script>
+        const data = [6, 5, 8, 4]
+        const data2 = [60, 50, 80, 40]
+        let data3 = []
+
+        // by default function 
+        // data3 = [...data, ...data2]
+        for (let i = 0; i < data.length; i++) {
+            data3[i] = data[i]
+        }
+        for (let i = 0; i < data2.length; i++) {
+            data3[data.length + i] = data2[i]
+        }
+
+        console.log(data3);
+
+        // let dumy=[1,2,3,4,5,6]
+        // console.log(dumy);
+
+        // console.log(dumy.reverse());
+
+        //by default fuction is used for reversed an array
+
+    </script>
+
+</body>
+
+</html>

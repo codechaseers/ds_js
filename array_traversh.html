@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Array Traversh</title>
+
+</head>
+
+<body>
+    <h1>Array Travershing using Java Script</h1>
+
+    <input type="text" id="index_value">
+    <input type="button" onclick="print_index()" value="submit">
+
+    <script>
+        let arr = [34, 45, 32, 56, 0, 7, 1, 4, 7];
+        //     for(let i=0;i<arr.length;i++)
+        //     {
+
+        //                 document.write("the index of array  "+i+" is "+arr[i]+"<br>");
+        //                 // console.log("the index of array  "+i+" is "+arr[i]);
+        //    }
+        // travesh thye array
+
+
+        function print_index() {
+            var index = document.getElementById('index_value').value;
+            if (index <= arr.length && index>=0) {
+
+                alert("the index you entered  "+index+" and the  value is "+arr[index])
+            }
+            else{
+                alert("index value does not exit ")
+            }
+
+
+        }
+
+        // if(index>=0){
+
+        //     document.write(arr[index]);
+        // }
+
+    </script>
+</body>
+
+</html>

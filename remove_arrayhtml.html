@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">remove an item in array </h1>
+    <script>
+        // remove an item in array 
+        // const arr = [32, 35, 40, 46, 31, 52, 36, 34, 76, 57]
+        // let new_arr = arr.filter((item) => item > 30 && item <= 40)
+        // console.log(new_arr);
+
+        // filter function is use for filter something it take a function as an input 
+        // filter function is use for filter something it take a function as an input 
+
+
+        const data = [46, 34, 64, 57, 58, 88, 54, 43]
+
+        console.log(data);
+        // console.log(data.length);
+
+        let positon = 4
+        for (i = positon; i < data.length; i++) {
+        data[i]=data[i+1]
+        }
+        data.length=data.length-1
+        console.log(data);
+
+
+        let heading = document.getElementById('heading').innerText = 'remove an item in array '
+
+        // by default function for deleteing an item on array
+        // data.splice(2,1)
+        // console.log(data);
+    </script>
+</body>
+
+
+</html>
